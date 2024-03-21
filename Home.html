@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  h1 {
+    
+    font-family: 'Indie Flower', cursive;font-size: 80px; /* Tamaño del mensaje más grande */
+    margin-bottom: 100px; /* Margen inferior del mensaje */
+    color: #333; /* Color del texto */
+  }
+
+  button {
+    padding: 20px 40px;
+    font-size: 26px;
+    background-color: #a0a0a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #ffea71;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Hola Camila, ¿Eres tú?</h1>
+  <button id="acceptButton">SI</button>
+  <button id="acceptButto">NO</button>
+</div>
+
+<script>
+  document.getElementById("acceptButton").onclick = function() {
+    window.location.href = "pagina1.html";
+  };
+</script>
+<script>
+  document.getElementById("acceptButto").onclick = function() {
+    window.location.href = "NO.html";
+  };
+</script>
+</body>
+</html>
